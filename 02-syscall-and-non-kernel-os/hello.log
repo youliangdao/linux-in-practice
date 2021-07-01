@@ -1,31 +1,31 @@
-21:25:37.063435 execve("./hello", ["./hello"], [/* 75 vars */]) = 0
-21:25:37.063711 brk(NULL)               = 0x2372000
-21:25:37.063754 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
-21:25:37.063794 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
-21:25:37.063823 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-21:25:37.063855 fstat(3, {st_mode=S_IFREG|0644, st_size=89543, ...}) = 0
-21:25:37.063879 mmap(NULL, 89543, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb17ebba000
-21:25:37.063902 close(3)                = 0
-21:25:37.063933 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
-21:25:37.063959 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-21:25:37.063983 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\t\2\0\0\0\0\0"..., 832) = 832
-21:25:37.065350 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
-21:25:37.065378 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb17ebb9000
-21:25:37.065404 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb17e5e1000
-21:25:37.065426 mprotect(0x7fb17e7a1000, 2097152, PROT_NONE) = 0
-21:25:37.065451 mmap(0x7fb17e9a1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fb17e9a1000
-21:25:37.065478 mmap(0x7fb17e9a7000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb17e9a7000
-21:25:37.065505 close(3)                = 0
-21:25:37.065532 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb17ebb8000
-21:25:37.065553 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb17ebb7000
-21:25:37.065573 arch_prctl(ARCH_SET_FS, 0x7fb17ebb8700) = 0
-21:25:37.065631 mprotect(0x7fb17e9a1000, 16384, PROT_READ) = 0
-21:25:37.065656 mprotect(0x600000, 4096, PROT_READ) = 0
-21:25:37.065679 mprotect(0x7fb17ebd0000, 4096, PROT_READ) = 0
-21:25:37.065700 munmap(0x7fb17ebba000, 89543) = 0
-21:25:37.065768 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 6), ...}) = 0
-21:25:37.065820 brk(NULL)               = 0x2372000
-21:25:37.065838 brk(0x2393000)          = 0x2393000
-21:25:37.065860 write(1, "hello world\n", 12) = 12
-21:25:37.066227 exit_group(0)           = ?
-21:25:37.066282 +++ exited with 0 +++
+18:20:37.172087 execve("./hello", ["./hello"], [/* 76 vars */]) = 0
+18:20:37.172346 brk(NULL)               = 0xa48000
+18:20:37.172383 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+18:20:37.172414 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+18:20:37.172436 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:20:37.172458 fstat(3, {st_mode=S_IFREG|0644, st_size=89543, ...}) = 0
+18:20:37.172476 mmap(NULL, 89543, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd8c9427000
+18:20:37.172494 close(3)                = 0
+18:20:37.172513 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+18:20:37.172535 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:20:37.172553 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\t\2\0\0\0\0\0"..., 832) = 832
+18:20:37.172570 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+18:20:37.172588 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd8c9426000
+18:20:37.172607 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd8c8e4e000
+18:20:37.172626 mprotect(0x7fd8c900e000, 2097152, PROT_NONE) = 0
+18:20:37.172648 mmap(0x7fd8c920e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fd8c920e000
+18:20:37.172670 mmap(0x7fd8c9214000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd8c9214000
+18:20:37.172692 close(3)                = 0
+18:20:37.172715 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd8c9425000
+18:20:37.172733 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd8c9424000
+18:20:37.172750 arch_prctl(ARCH_SET_FS, 0x7fd8c9425700) = 0
+18:20:37.176921 mprotect(0x7fd8c920e000, 16384, PROT_READ) = 0
+18:20:37.177019 mprotect(0x600000, 4096, PROT_READ) = 0
+18:20:37.177111 mprotect(0x7fd8c943d000, 4096, PROT_READ) = 0
+18:20:37.177143 munmap(0x7fd8c9427000, 89543) = 0
+18:20:37.177222 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+18:20:37.177423 brk(NULL)               = 0xa48000
+18:20:37.177458 brk(0xa69000)           = 0xa69000
+18:20:37.177491 write(1, "hello world\n", 12) = 12
+18:20:37.178276 exit_group(0)           = ?
+18:20:37.178349 +++ exited with 0 +++
